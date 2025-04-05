@@ -1,4 +1,4 @@
-baseURL = 'https://maverick.canhtran.me'
+baseURL = 'https://alexk.uk'
 languageCode = 'en-us'
 title = 'Test'
 theme = 'maverick'
@@ -16,7 +16,6 @@ theme = 'maverick'
     enabled = false
     # githubRepo = 'canhtran/maverick'
     # theme = 'github-light'
-
 
 [menu]
   [[menu.main]]
