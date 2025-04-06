@@ -1,6 +1,6 @@
 baseURL = 'https://alexk.uk'
 languageCode = 'en-us'
-title = 'Test'
+title = 'Coding & Anxiety'
 theme = 'maverick'
 
 [permalinks]
@@ -8,8 +8,8 @@ theme = 'maverick'
 
 [params]
   logo = '/assets/favicon.ico'
-  description = "A minimal hugo theme focus on content"
-  author = 'Calvin Tran'
+  description = "Small personal website and blog."
+  author = 'Alexey Kondratov'
   items = 10
 
   [params.comments]
@@ -19,15 +19,20 @@ theme = 'maverick'
 
 [menu]
   [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = "-110"
-  [[menu.main]]
-    identifier = "posts"
-    name = "Post"
-    url = "/posts/"
-    weight = -200
+    weight = 3
 
 [markup]
   [markup.goldmark.renderer]
@@ -67,3 +72,11 @@ ignoreErrors = ["error-remote-getjson"]
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
+source = 'images'
+target = 'static/images'

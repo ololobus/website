@@ -2,18 +2,9 @@
 title: About
 ---
 
-**Maverick** is a minimalistic Hugo blogging theme. The theme is inspired from [Poole](https://getpoole.com) and [Listed](https://github.com/ronv/listed)
+<img class="avatar" src="/images/avatar.jpeg" alt="avatar">
 
-### Features
+Hey, my name is **Alexey Kondratov**.
 
-- Minimalistic, clean and simple design
-- Responsive design
-- Inline CSS
-- Anchor headings
-- Tags
-- 404 page
-- Compressed CSS and HTML
-- 100/100 score on Lighthouse, Page Speed Insights & Webpagetest
-- Robots.txt
-- Ultra fast
-- Github comment
+- 🐙 [github.com/ololobus](https://github.com/ololobus)
+- 👨‍💻 [linkedin.com/in/alexeyko](https://www.linkedin.com/in/alexeyko)
