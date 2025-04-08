@@ -2,7 +2,7 @@
 title: About
 ---
 
-<img class="avatar" src="/images/avatar.jpeg" alt="avatar">
+<img class="avatar-square" src="/images/avatar.jpeg" alt="alexey's photo">
 
 Hey, my name is **Alexey Kondratov**.
 

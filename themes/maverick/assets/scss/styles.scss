@@ -324,3 +324,16 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+
+//
+// Overrides and additions
+//
+
+.avatar-square {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: -10px 0 0 15px;
+    float: right;
+    border-radius: 5%;
+}

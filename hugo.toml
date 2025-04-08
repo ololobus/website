@@ -1,7 +1,7 @@
 baseURL = 'https://alexk.uk'
 languageCode = 'en-us'
 title = 'Coding & Anxiety'
-theme = 'maverick'
+theme = ['maverick']
 
 [permalinks]
   pages = "/:slug"
@@ -11,6 +11,8 @@ theme = 'maverick'
   description = "Small personal website and blog."
   author = 'Alexey Kondratov'
   items = 10
+
+  custom_css = ["scss/_custom.scss"]
 
   [params.comments]
     enabled = false
