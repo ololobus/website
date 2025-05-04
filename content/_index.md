@@ -1,6 +1,6 @@
 ## Hallo
 
-<img class="avatar-square" src="/images/chimpanzee-shock.png" alt="avatar - chimpanzee System Shock styled">
+<img class="avatar_square" src="/images/chimpanzee-shock.png" alt="Avatar - chimpanzee System Shock styled">
 
 There are several reasons for this website to exist (in no particular order):
 
