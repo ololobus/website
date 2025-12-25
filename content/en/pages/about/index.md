@@ -6,7 +6,7 @@ title: About
 
 Hey, my name is **Alexey Kondratov**. I'm originally from Moscow, Russia, where I grew up, got my Master's degree in physics, defended my PhD, and [spent several years doing academic research](https://scholar.google.com/citations?user=WXJo9l0AAAAJ). After that, I participated in [2017 GSoC for the PostgreSQL organization](https://summerofcode.withgoogle.com/archive/2017/projects/6196688620355584) and finally decided to switch tracks in my career and focus on software development.
 
-Nowadays, I live in Berlin, Germany, and work as an Engineering Manager at Databricks leading a team working on the compute part of Lakebase Postgres, where I got after [https://neon.tech](Neon) acquisition in 2025.
+Nowadays, I live in Berlin, Germany, and work as an Engineering Manager at Databricks leading a team working on the compute part of Lakebase Postgres, where I got after [Neon](https://neon.tech) acquisition in 2025.
 
 - 🐙 [github.com/ololobus](https://github.com/ololobus)
 - 👨‍💻 [linkedin.com/in/alexeyko](https://www.linkedin.com/in/alexeyko)
