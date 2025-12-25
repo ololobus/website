@@ -4,7 +4,7 @@ title: "Home"
 
 # Hallo
 
-<img class="avatar_square" src="/images/chimpanzee-shock.png" alt="Avatar - chimpanzee System Shock styled">
+<img class="avatar_square" src="/images/chimpanzee-shock.png" alt="Avatar - chimpanzee System Shock styled (AI generated)">
 
 There are several reasons for this website to exist (in no particular order):
 

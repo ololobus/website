@@ -17,7 +17,7 @@
       <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
       {{ end }}
     </li>
-    <li class="lang-selector-mobile">
+    <li class="lang-selector">
       {{ range $index, $lang := $langs }}
         {{ $translations := where $page.AllTranslations "Lang" $lang.Lang }}
         {{ $scratch := newScratch }}
@@ -49,7 +49,7 @@
           <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
         </li>
       {{ end }}
-      <li class="lang-selector-mobile">
+      <li class="lang-selector">
         &nbsp;
         {{ range $index, $lang := $langs }}
           {{ $translations := where $page.AllTranslations "Lang" $lang.Lang }}
