@@ -1,7 +1,21 @@
 baseURL = 'https://alexk.uk'
-languageCode = 'en-us'
-title = 'Coding & Anxiety'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
 theme = ['maverick']
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    languageCode = 'en-us'
+    languageName = 'EN 🇬🇧'
+    title = 'Coding & Anxiety'
+    weight = 1
+  [languages.ru]
+    contentDir = 'content/ru'
+    languageCode = 'ru-ru'
+    languageName = 'RU 🇷🇺'
+    title = 'Coding & Anxiety'
+    weight = 2
 
 [permalinks]
   pages = "/:slug"
@@ -19,21 +33,38 @@ theme = ['maverick']
     # githubRepo = 'canhtran/maverick'
     # theme = 'github-light'
 
-[menu]
-  [[menu.main]]
+[languages.en.menu]
+  [[languages.en.menu.main]]
     identifier = "home"
     name = "Home"
-    url = "/"
+    url = "/en/"
     weight = 1
-  [[menu.main]]
+  [[languages.en.menu.main]]
     identifier = "posts"
     name = "Posts"
-    url = "/posts/"
+    url = "/en/posts/"
     weight = 2
-  [[menu.main]]
+  [[languages.en.menu.main]]
     identifier = "about"
     name = "About"
-    url = "/about/"
+    url = "/en/about/"
+    weight = 3
+
+[languages.ru.menu]
+  [[languages.ru.menu.main]]
+    identifier = "home"
+    name = "Главная"
+    url = "/ru/"
+    weight = 1
+  [[languages.ru.menu.main]]
+    identifier = "posts"
+    name = "Посты"
+    url = "/ru/posts/"
+    weight = 2
+  [[languages.ru.menu.main]]
+    identifier = "about"
+    name = "Обо мне"
+    url = "/ru/about/"
     weight = 3
 
 [markup]

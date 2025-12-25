@@ -1,16 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ .Site.Language.Lang }}">
   {{ partial "head.html" . }}
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
   <main id="main">
     <div class="content">
       {{ partial "header.html" . }}
-      {{ .Content }}
-      {{ if gt (len ( where .Site.RegularPages "Section" "posts" )) 0 }}
+      {{ if .Content }}
+        {{ .Content }}
+      {{ else }}
+        {{ with site.GetPage (printf "/%s/_index.md" .Site.Language.Lang) }}
+          {{ .Content }}
+        {{ end }}
+      {{ end }}
+      {{ $langPosts := where .Site.RegularPages.ByDate.Reverse "Lang" $.Site.Language.Lang }}
+      {{ $langPosts := where $langPosts "Section" "posts" }}
+      {{ if gt (len $langPosts) 0 }}
       <h1>Latest Posts</h1>
       <section>
-        {{ range (first .Site.Params.items (where .Site.RegularPages "Section" "posts" ).ByDate.Reverse) }}
+        {{ range (first .Site.Params.items $langPosts) }}
           <p>
             <time class="g time" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>&nbsp;
             <a href="{{ .Permalink }}">{{ .Title }}</a>
