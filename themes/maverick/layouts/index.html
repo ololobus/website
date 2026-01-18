@@ -13,15 +13,16 @@
           {{ .Content }}
         {{ end }}
       {{ end }}
-      {{ $langPosts := where .Site.RegularPages.ByDate.Reverse "Lang" $.Site.Language.Lang }}
-      {{ $langPosts := where $langPosts "Section" "posts" }}
+      {{ $langPosts := where .Site.Pages.ByDate.Reverse "Section" "posts" }}
+      {{ $langPosts := where $langPosts "Kind" "in" (slice "page" "section") }}
+      {{ $langPosts := where $langPosts "RelPermalink" "ne" (printf "/%s/posts/" .Site.Language.Lang) }}
       {{ if gt (len $langPosts) 0 }}
       <h1>Latest Posts</h1>
       <section>
         {{ range (first .Site.Params.items $langPosts) }}
           <p>
             <time class="g time" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>&nbsp;
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           <p>
         {{ end }}
       </section>

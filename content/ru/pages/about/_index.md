@@ -1,6 +1,7 @@
 ---
 title: "Обо мне"
 slug: "about"
+url: about/
 ---
 
 <img class="avatar_square" src="/en/about/avatar.jpeg" alt="Фото Алексея">

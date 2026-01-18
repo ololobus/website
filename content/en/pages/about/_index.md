@@ -1,5 +1,7 @@
 ---
 title: About
+slug: about
+url: about/
 ---
 
 <img class="avatar_square" src="avatar.jpeg" alt="Alexey's photo">
